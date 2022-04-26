@@ -1,17 +1,17 @@
 import {Component, OnInit} from '@angular/core';
-import {Wine} from '../Wine.model';
-import {WineService} from '../Wine.service';
+import {wine} from '../wine.model';
+import {wineService} from '../wine.service';
 
 @Component({
-  selector: 'app-Wine-list',
-  templateUrl: './Wine-list.component.html',
-  styleUrls: ['./Wine-list.component.css']
+  selector: 'app-wine-list',
+  templateUrl: './wine-list.component.html',
+  styleUrls: ['./wine-list.component.css']
 })
-export class WineListComponent implements OnInit {
-  Winee: Wine[];
-  constructor(private WineService: WineService) { }
+export class wineListComponent implements OnInit {
+  winee: wine[];
+  constructor(private wineService: wineService) { }
 
   ngOnInit(): void {
-    this.Winee = this.WineService.getWinee();
+    this.winee = this.wineService.getwinee();
   }
 }

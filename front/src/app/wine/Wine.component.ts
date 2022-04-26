@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import {Wine} from './Wine.model';
-import {WineService} from './Wine.service';
+import {wine} from './wine.model';
+import {wineService} from './wine.service';
 
 @Component({
-  selector: 'app-Winee',
-  templateUrl: './Wine.component.html',
-  styleUrls: ['./Wine.component.css'],
-  providers: [WineService]
+  selector: 'app-winee',
+  templateUrl: './wine.component.html',
+  styleUrls: ['./wine.component.css'],
+  providers: [wineService]
 })
-export class WineComponent implements OnInit {
+export class wineComponent implements OnInit {
 
-  selectedWine: Wine;
-  constructor(private WineService: WineService) { }
+  selectedwine: wine;
+  constructor(private wineService: wineService) { }
 
   ngOnInit(): void {
-    this.WineService.WineSelected
+    this.wineService.wineSelected
       .subscribe(
-        (Wine: Wine) => {
-          this.selectedWine = Wine;
+        (wine: wine) => {
+          this.selectedwine = wine;
         }
       );
   }

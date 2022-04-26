@@ -1,4 +1,4 @@
-export class wine {
+export class beer {
   public name: string;
   public price: string;
   public imagePath: string;

@@ -1,13 +1,13 @@
 import {Component, EventEmitter, Input, OnInit} from '@angular/core';
-import { Wine} from '../../Wine.model';
+import { wine} from '../../wine.model';
 
 @Component({
-  selector: 'app-Wine-item',
-  templateUrl: './Wine-item.component.html',
-  styleUrls: ['./Wine-item.component.css']
+  selector: 'app-wine-item',
+  templateUrl: './wine-item.component.html',
+  styleUrls: ['./wine-item.component.css']
 })
-export class WineItemComponent implements OnInit {
-  @Input() Wine: Wine;
+export class wineItemComponent implements OnInit {
+  @Input() wine: wine;
   @Input() index: number;
   ngOnInit() {
   }

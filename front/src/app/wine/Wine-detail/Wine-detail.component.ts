@@ -1,25 +1,25 @@
 import { Component, OnInit, Input} from '@angular/core';
-import {Wine} from '../Wine.model';
-import {WineService} from '../Wine.service';
+import {wine} from '../wine.model';
+import {wineService} from '../wine.service';
 
 import { ActivatedRoute, Params} from '@angular/router';
 @Component({
-  selector: 'app-Wine-detail',
-  templateUrl: './Wine-detail.component.html',
-  styleUrls: ['./Wine-detail.component.css']
+  selector: 'app-wine-detail',
+  templateUrl: './wine-detail.component.html',
+  styleUrls: ['./wine-detail.component.css']
 })
-export class WineDetailComponent implements OnInit {
-  Wine: Wine;
+export class wineDetailComponent implements OnInit {
+  wine: wine;
   id: number;
 
-  constructor(private WineService: WineService,
+  constructor(private wineService: wineService,
               private route: ActivatedRoute) { }
   ngOnInit() {
     this.route.params
       .subscribe(
         (params: Params) => {
           this.id = +params['id'];
-          this.Wine = this.WineService.getWine(this.id);
+          this.wine = this.wineService.getwine(this.id);
         }
       );
   }

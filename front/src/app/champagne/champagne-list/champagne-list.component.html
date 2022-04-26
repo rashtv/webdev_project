@@ -1,0 +1,11 @@
+
+<div class="row">
+  <div class="col-xs-12">
+
+    <app-champagne-item
+
+      *ngFor="let champagneEl of champagne; let i = index"
+      [champagne]="champagneEl"
+      [index]="i"></app-champagne-item>
+  </div>
+</div>

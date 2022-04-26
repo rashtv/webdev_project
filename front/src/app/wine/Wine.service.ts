@@ -1,56 +1,56 @@
-import {Wine} from './Wine.model';
+import {wine} from './wine.model';
 import {EventEmitter} from '@angular/core';
 
-export class WineService {
-  WineSelected = new EventEmitter<Wine>();
-  private Winee: Wine[] = [
-    new Wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
-    'https://www.vinello.eu/media/image/33/eb/10/horgelus-blanc-colombard-sauvignon_600x600.webp',
-    'Domaine Horgelus Blanc Côtes de Gascogne IGP by Domaine Horgelus impresses with its brilliant light yellow colour, its varietal fresh and intense bouquet in which citrus aromas, tropical fruits and floral notes predominate. A very successful and tasteful cuvée, which is fruity and elegant on the palate with a lively acidity structure and a slightly mineral aftertaste.'),
+export class wineService {
+  wineSelected = new EventEmitter<wine>();
+  private winee: wine[] = [
+    new wine('Les Maselles Sauvignon Blanc','4 806,93 ₸', 
+    'https://cdn.shopify.com/s/files/1/0101/0981/2814/products/wine-les-maselles-sauvignon-blanc-17006230667342_x200.png',
+    'This Sauvignon Blanc comes from our long-time cooperative partner Alliance Loire who specialise in growing and making top-quality Loire wines and this is a fine example of what the Loire does so well. This is a crisp, dry, and refreshing Sauvignon Blanc with inviting aromas of fresh cut grass, lime zest and bright, fresh acidity on the finish.'),
     
-    new Wine('Fleur de d`Artagnan Blanc Côtes de Gascogne 2020 - Plaimont','2 206,02 ₸', 
-    'https://www.vinello.eu/media/image/61/79/3f/fleur-de-dartagnan-blanc-cotes-fleur-de-dartagnan-blanc-cotes-de-gascogne-igpgascogne-igp_600x600.webp',
-    'Fleur de d`Artagnan Blanc Côtes de Gascogne by Plaimont is a fresh white wine from Gascogne in southern France that flatters the nose with its wonderful citrus aromas and floral notes. Nuances of yellow nuts such as apples and pears but also delicate herbal nuances after lemon balm complement the bouquet of Fleur de d`Artagnan Blanc. On the palate, the white Fleur de d`Artagnan Cuvée delights with a fine balance between lively fruit acid and a delicate residual sweetness, which gives this French white wine a perfect drinking flow. A wonderfully uncomplicated white wine for 1,000 occasions.'),
+    new wine('Luna Argenta','6 224,97 ₸' , 
+    'https://cdn.shopify.com/s/files/1/0101/0981/2814/products/wine-luna-argenta-28427764236366_x200.png',
+    'Coming from the hot southern Italian Puglia region, this wine is made from partially dried (Appassite) Negroamaro and Primitivo grapes. Intense aromas of crushed blackberry and cherry with notes of vanilla and cinnamon spice that follow through to the palate along with hints of mocha/chocolate. This wine has established itself as a firm customer favourite.'),
 
-    new Wine('Aimery Grande Cuvée 1531 Rosé Crémant Brut - Sieur d`Arques','2 869,71 ₸', 
-    'https://www.vinello.eu/media/image/88/15/10/aimery-cremant-rose_600x600.webp',
+    new wine('Famille JM Cazes Côtes du Rhône Réserve','5 752,89 ₸', 
+    'https://cdn.shopify.com/s/files/1/0101/0981/2814/products/wine-famille-jm-cazes-cotes-du-rhone-reserve-28753992155214_x200.png',
     'Domaine Horgelus Blanc Côtes de Gascogne IGP by Domaine Horgelus impresses with its brilliant light yellow colour, its varietal fresh and intense bouquet in which citrus aromas, tropical fruits and floral notes predominate. A very successful and tasteful cuvée, which is fruity and elegant on the palate with a lively acidity structure and a slightly mineral aftertaste.'),
     
-    new Wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
+    new wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
+    'https://cdn.shopify.com/s/files/1/0101/0981/2814/products/wine-chateau-belles-eaux-les-coteaux-28429429440590_x200.png',
+    'Côtes du Rhône Réserve continues the Rhône winemaking journey of the Cazes family of Château Lynch-Bages fame, who in 2006 acquired Domaine des Sénéchaux in Châteauneuf-du-Pape. Made with the same care and attention, this Côtes du Rhône enjoys a Mediterranean climate with hot sunny days regularly tempered by the mistral wind. The vineyards are farmed environmentally with focus on biodiversity conservation, plant protection and careful water resource management.'),
+    
+    new wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
     'https://www.vinello.eu/media/image/11/3d/a6/horgelus-blanc-colombard-sauvignon-glas_600x600.webp',
     'Domaine Horgelus Blanc Côtes de Gascogne IGP by Domaine Horgelus impresses with its brilliant light yellow colour, its varietal fresh and intense bouquet in which citrus aromas, tropical fruits and floral notes predominate. A very successful and tasteful cuvée, which is fruity and elegant on the palate with a lively acidity structure and a slightly mineral aftertaste.'),
     
-    new Wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
+    new wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
     'https://www.vinello.eu/media/image/11/3d/a6/horgelus-blanc-colombard-sauvignon-glas_600x600.webp',
     'Domaine Horgelus Blanc Côtes de Gascogne IGP by Domaine Horgelus impresses with its brilliant light yellow colour, its varietal fresh and intense bouquet in which citrus aromas, tropical fruits and floral notes predominate. A very successful and tasteful cuvée, which is fruity and elegant on the palate with a lively acidity structure and a slightly mineral aftertaste.'),
     
-    new Wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
+    new wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
     'https://www.vinello.eu/media/image/11/3d/a6/horgelus-blanc-colombard-sauvignon-glas_600x600.webp',
     'Domaine Horgelus Blanc Côtes de Gascogne IGP by Domaine Horgelus impresses with its brilliant light yellow colour, its varietal fresh and intense bouquet in which citrus aromas, tropical fruits and floral notes predominate. A very successful and tasteful cuvée, which is fruity and elegant on the palate with a lively acidity structure and a slightly mineral aftertaste.'),
     
-    new Wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
+    new wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
     'https://www.vinello.eu/media/image/11/3d/a6/horgelus-blanc-colombard-sauvignon-glas_600x600.webp',
     'Domaine Horgelus Blanc Côtes de Gascogne IGP by Domaine Horgelus impresses with its brilliant light yellow colour, its varietal fresh and intense bouquet in which citrus aromas, tropical fruits and floral notes predominate. A very successful and tasteful cuvée, which is fruity and elegant on the palate with a lively acidity structure and a slightly mineral aftertaste.'),
     
-    new Wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
+    new wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
     'https://www.vinello.eu/media/image/11/3d/a6/horgelus-blanc-colombard-sauvignon-glas_600x600.webp',
     'Domaine Horgelus Blanc Côtes de Gascogne IGP by Domaine Horgelus impresses with its brilliant light yellow colour, its varietal fresh and intense bouquet in which citrus aromas, tropical fruits and floral notes predominate. A very successful and tasteful cuvée, which is fruity and elegant on the palate with a lively acidity structure and a slightly mineral aftertaste.'),
     
-    new Wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
-    'https://www.vinello.eu/media/image/11/3d/a6/horgelus-blanc-colombard-sauvignon-glas_600x600.webp',
-    'Domaine Horgelus Blanc Côtes de Gascogne IGP by Domaine Horgelus impresses with its brilliant light yellow colour, its varietal fresh and intense bouquet in which citrus aromas, tropical fruits and floral notes predominate. A very successful and tasteful cuvée, which is fruity and elegant on the palate with a lively acidity structure and a slightly mineral aftertaste.'),
-    
-    new Wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
+    new wine('Horgelus Blanc Côtes de Gascogne 2021 - Domaine Horgelus','2 869,71 ₸', 
     'https://www.vinello.eu/media/image/11/3d/a6/horgelus-blanc-colombard-sauvignon-glas_600x600.webp',
     'Domaine Horgelus Blanc Côtes de Gascogne IGP by Domaine Horgelus impresses with its brilliant light yellow colour, its varietal fresh and intense bouquet in which citrus aromas, tropical fruits and floral notes predominate. A very successful and tasteful cuvée, which is fruity and elegant on the palate with a lively acidity structure and a slightly mineral aftertaste.'),
     
       
   ];
-  getWinee() {
-    return this.Winee.slice();
+  getwinee() {
+    return this.winee.slice();
   }
-  getWine(index: number) {
-    return this.Winee[index];
+  getwine(index: number) {
+    return this.winee[index];
   }
 }
 

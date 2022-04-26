@@ -1,0 +1,11 @@
+
+<div class="row">
+  <div class="col-xs-12">
+
+    <app-beer-item
+
+      *ngFor="let beerEl of beers; let i = index"
+      [beer]="beerEl"
+      [index]="i"> </app-beer-item>
+  </div>
+</div>

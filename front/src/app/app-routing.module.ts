@@ -1,15 +1,29 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {WineComponent} from './Wine/Wine.component';
 import {AboutComponent} from './about/about.component';
-import {WineStartComponent} from './Wine/Wine-start/Wine-start.component';
-import {WineDetailComponent} from './Wine/Wine-detail/Wine-detail.component';
+import {wineComponent} from './wine/wine.component';
+import {wineStartComponent} from './wine/wine-start/wine-start.component';
+import {wineDetailComponent} from './wine/wine-detail/wine-detail.component';
+import {champagneDetailComponent} from './champagne/champagne-detail/champagne-detail.component';
+import {champagneStartComponent} from './champagne/champagne-start/champagne-start.component';
+import {champagneComponent} from './champagne/champagne.component';
+import {beerStartComponent} from './beers/beer-start/beer-start.component';
+import {beerDetailComponent} from './beers/beer-detail/beer-detail.component';
+import {beersComponent} from './beers/beers.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/about', pathMatch: 'full'},
-  {path: 'Wine', component: WineComponent, children: [
-      {path: '', component: WineStartComponent},
-      {path: ':id', component: WineDetailComponent}
+  {path: 'wine', component: wineComponent, children: [
+      {path: '', component: wineStartComponent},
+      {path: ':id', component: wineDetailComponent}
+    ]},
+    {path: 'champagne', component: champagneComponent, children: [
+      { path: '', component: champagneStartComponent},
+      { path: ':id', component: champagneDetailComponent}
+    ]},
+    {path: 'beers', component: beersComponent, children: [
+      {path: '', component: beerStartComponent},
+      {path: ':id', component: beerDetailComponent}
     ]},
   {path: 'about', component: AboutComponent},
 

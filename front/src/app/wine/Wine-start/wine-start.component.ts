@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-Wine-start',
-  templateUrl: './Wine-start.component.html',
-  styleUrls: ['./Wine-start.component.css']
+  selector: 'app-wine-start',
+  templateUrl: './wine-start.component.html',
+  styleUrls: ['./wine-start.component.css']
 })
-export class WineStartComponent implements OnInit {
+export class wineStartComponent implements OnInit {
 
   constructor() { }
 
