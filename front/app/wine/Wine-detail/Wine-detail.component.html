@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img [src]="Wine.imagePath" alt="{{Wine.name}}" class="img-rounded" style="max-height: 400px;">
+  </div>
+</div>
+<div class = "row">
+  <div class="col-xs-12">
+    <h1> {{Wine.name}}</h1>
+  </div>
+</div>
+<div class ="row">
+  <div class = "col-xs-12">
+    <div class="btn-group" appDropdown>
+      <button
+        type="button" class="btn btn-primary">
+        Add to Shopping Cart
+      </button>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="row" >
+  <div class="col-xs-12" id="price">
+    Price:  {{Wine.price}} <hr>
+  </div>
+</div>
+<div class="row" >
+  <div class="col-xs-12" id="desc">
+    {{Wine.description}} <hr>
+  </div>
+</div>

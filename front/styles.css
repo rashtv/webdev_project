@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+#desc{
+  font-family: "American Typewriter";
+}
+#price{
+  color:dimgrey;
+  font-size: 16px;
+}
+#welcometext{
+  font-family: "Malayalam MN";
+  font-size: 18px;
+}
+#top1{
+  color: #334C6C;
+  font-family: 'Malayalam MN"'
+}
+#top2{
+  color: #516681;
+}
+#top3{
+  color: #516681;
+}
+
