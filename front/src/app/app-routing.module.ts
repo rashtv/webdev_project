@@ -10,6 +10,7 @@ import {champagneComponent} from './champagne/champagne.component';
 import {beerStartComponent} from './beers/beer-start/beer-start.component';
 import {beerDetailComponent} from './beers/beer-detail/beer-detail.component';
 import {beersComponent} from './beers/beers.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/about', pathMatch: 'full'},
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
       {path: ':id', component: beerDetailComponent}
     ]},
   {path: 'about', component: AboutComponent},
+  {path: 'login', component: LoginComponent}
 
 ];
 
