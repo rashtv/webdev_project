@@ -1,0 +1,30 @@
+<div class="product-container my-3 py-3">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Your name</span>
+    <input type="text" class="form-control" [(ngModel)]="createSender">
+  </div>
+  <div class="input-group">
+    <span class="input-group-text">Comment</span>
+    <textarea class="form-control" [(ngModel)]="createBody"></textarea>
+  </div>
+  <div class="input-group d-flex flex-row-reverse my-3 ">
+    <button class="btn btn-success" (click)="createComment()">Leave comment</button>
+  </div>
+  <div class="row">
+    <div class="card" *ngFor="let comment of commentList">
+      <div class="card-body">
+        <h5 class="card-title">{{comment.sender}}</h5>
+        <p class="card-text">{{comment.body}}</p>
+        <div class="btn-group">
+          <span class="input-group-text">Replacer</span>
+          <input type="text" class="form-control" [(ngModel)]="updateBody">
+          <button type="button" class="btn btn-sm btn-outline-secondary"
+                  (click)="updateComment(comment.id,comment.sender,productId)">Update
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-secondary" (click)="deleteComment(comment.id)">Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

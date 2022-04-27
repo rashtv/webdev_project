@@ -24,6 +24,7 @@ import { beerDetailComponent } from './beers/beer-detail/beer-detail.component';
 import { beerListComponent } from './beers/beer-list/beer-list.component';
 import { beerStartComponent } from './beers/beer-start/beer-start.component';
 import { LoginComponent } from './login/login.component';
+import { CommentListComponent } from './comment-list/comment-list.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { LoginComponent } from './login/login.component';
     beerDetailComponent,
     beerListComponent,
     beerStartComponent,
-    LoginComponent
+    LoginComponent,
+    CommentListComponent
   ],
   imports: [
     BrowserModule,
