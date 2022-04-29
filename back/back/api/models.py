@@ -13,7 +13,7 @@ class Beer(models.Model):
 
     def __str__(self):
         return f'{self.id}: {self.name}'
-
+    
     def to_json(self):
         return {
             'id': self.id,
