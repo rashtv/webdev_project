@@ -1,0 +1,15 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="hhback.api.models.Company.id" />
+          <option value="hhback.api.models.Vacancy.id" />
+          <option value="api.models" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
