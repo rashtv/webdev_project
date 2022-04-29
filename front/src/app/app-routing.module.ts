@@ -12,6 +12,10 @@ import {beerDetailComponent} from './beers/beer-detail/beer-detail.component';
 import {beersComponent} from './beers/beers.component';
 import { LoginComponent } from './login/login.component';
 import { CommentListComponent } from './comment-list/comment-list.component';
+import {vodka} from './vodka/vodka.model';
+import {vodkaComponent} from './vodka/vodka.component';
+import {VodkaStartComponent} from './vodka/vodka-start/vodka-start.component';
+import {vodkaDetailComponent} from './vodka/vodka-detail/vodka-detail.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/about', pathMatch: 'full'},
@@ -26,6 +30,10 @@ const appRoutes: Routes = [
     {path: 'beers', component: beersComponent, children: [
       {path: '', component: beerStartComponent},
       {path: ':id', component: beerDetailComponent}
+    ]},
+  {path: 'vodkas', component: vodkaComponent, children: [
+    {path: '', component: VodkaStartComponent},
+    {path: ':id', component: vodkaDetailComponent}
     ]},
   {path: 'about', component: AboutComponent},
   {path: 'login', component: LoginComponent},

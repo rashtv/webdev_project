@@ -1,0 +1,11 @@
+
+<div class="row">
+  <div class="col-xs-12">
+
+    <app-vodka-item
+
+      *ngFor="let vodkaEl of vodka; let i = index"
+      [vodka]="vodkaEl"
+      [index]="i"></app-vodka-item>
+  </div>
+</div>

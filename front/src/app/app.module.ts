@@ -25,6 +25,11 @@ import { beerListComponent } from './beers/beer-list/beer-list.component';
 import { beerStartComponent } from './beers/beer-start/beer-start.component';
 import { LoginComponent } from './login/login.component';
 import { CommentListComponent } from './comment-list/comment-list.component';
+import { vodkaComponent } from './vodka/vodka.component';
+import { VodkaListComponent } from './vodka/vodka-list/vodka-list.component';
+import { VodkaStartComponent } from './vodka/vodka-start/vodka-start.component';
+import { vodkaDetailComponent } from './vodka/vodka-detail/vodka-detail.component';
+import { VodkaItemComponent } from './vodka/vodka-list/vodka-item/vodka-item.component';
 
 
 @NgModule({
@@ -51,7 +56,12 @@ import { CommentListComponent } from './comment-list/comment-list.component';
     beerListComponent,
     beerStartComponent,
     LoginComponent,
-    CommentListComponent
+    CommentListComponent,
+    vodkaComponent,
+    VodkaListComponent,
+    VodkaStartComponent,
+    vodkaDetailComponent,
+    VodkaItemComponent
   ],
   imports: [
     BrowserModule,
