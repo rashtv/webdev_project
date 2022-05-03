@@ -3,9 +3,9 @@ from django.db import models
 
 class Beer(models.Model):
     name = models.CharField(max_length=255, default='', null=True)
-    price = models.CharField(max_length=255, default='0', null=True)
+    price = models.CharField(max_length=255, default='', null=True)
     image_path = models.CharField(max_length=255, default='', null=True)
-    description = models.CharField(max_length=255, default='', null=True)
+    description = models.TextField(default='', null=True)
 
     class Meta:
         verbose_name = 'Beer',
@@ -13,7 +13,7 @@ class Beer(models.Model):
 
     def __str__(self):
         return f'{self.id}: {self.name}'
-
+    
     def to_json(self):
         return {
             'id': self.id,
@@ -26,9 +26,9 @@ class Beer(models.Model):
 
 class Wine(models.Model):
     name = models.CharField(max_length=255, default='', null=True)
-    price = models.CharField(max_length=255, default='0', null=True)
+    price = models.CharField(max_length=255, default='', null=True)
     image_path = models.CharField(max_length=255, default='', null=True)
-    description = models.CharField(max_length=255, default='', null=True)
+    description = models.TextField(default='', null=True)
 
     class Meta:
         verbose_name = 'Wine',
@@ -49,9 +49,9 @@ class Wine(models.Model):
 
 class Champagne(models.Model):
     name = models.CharField(max_length=255, default='', null=True)
-    price = models.CharField(max_length=255, default='0', null=True)
+    price = models.CharField(max_length=255, default='', null=True)
     image_path = models.CharField(max_length=255, default='', null=True)
-    description = models.CharField(max_length=255, default='', null=True)
+    description = models.TextField(default='', null=True)
 
     class Meta:
         verbose_name = 'Champagne',
@@ -72,9 +72,9 @@ class Champagne(models.Model):
 
 class Vodka(models.Model):
     name = models.CharField(max_length=255, default='', null=True)
-    price = models.CharField(max_length=255, default='0', null=True)
+    price = models.CharField(max_length=255, default='', null=True)
     image_path = models.CharField(max_length=255, default='', null=True)
-    description = models.CharField(max_length=255, default='', null=True)
+    description = models.TextField(default='', null=True)
 
     class Meta:
         verbose_name = 'Vodka',
@@ -95,7 +95,7 @@ class Vodka(models.Model):
 
 class Comment(models.Model):
     title = models.CharField(max_length=255, default='', null=True)
-    text = models.CharField(max_length=255, default='', null=True)
+    text = models.TextField(default='', null=True)
 
     class Meta:
         verbose_name = 'Comment',
